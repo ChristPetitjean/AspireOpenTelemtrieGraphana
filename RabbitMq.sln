@@ -1,0 +1,91 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wolverine_Rabbit", "Wolverine_Rabbit\Wolverine_Rabbit.csproj", "{DD0CDCD0-05F2-44D3-8BFA-D76AE7CBF6C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{72985C29-4003-4355-A1AA-7F61EC207C1A}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aspire", "Aspire", "{9AA561F8-9B26-4CD9-A346-2A95EF2520DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHost", "Aspire\AppHost\AppHost.csproj", "{D76628BC-70EE-40E5-A08F-86693F696C9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDefaults", "Aspire\ServiceDefaults\ServiceDefaults.csproj", "{FE286A14-B204-432A-8687-4D3D9AE1CFD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "grafana", "grafana", "{33951FCE-7297-4719-9842-F710C0567BD8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "prometheus", "prometheus", "{42B9ADAC-8822-4C92-8D85-9D9F1C18A729}"
+	ProjectSection(SolutionItems) = preProject
+		Aspire\prometheus\prometheus.yml = Aspire\prometheus\prometheus.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{4E1E44BD-D4EC-4A91-B63D-0DFAEB9E356F}"
+	ProjectSection(SolutionItems) = preProject
+		Aspire\grafana\config\grafana.ini = Aspire\grafana\config\grafana.ini
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dashboards", "dashboards", "{75DFB555-58DD-414A-8AE5-66D0D65709FE}"
+	ProjectSection(SolutionItems) = preProject
+		Aspire\grafana\dashboards\aspnetcore-endpoint.json = Aspire\grafana\dashboards\aspnetcore-endpoint.json
+		Aspire\grafana\dashboards\aspnetcore.json = Aspire\grafana\dashboards\aspnetcore.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "provisioning", "provisioning", "{0D8447BE-EC88-461E-B0DF-767F53C397EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dashboards", "dashboards", "{4E5DEBF7-D17E-43F0-A7F4-C903918A8731}"
+	ProjectSection(SolutionItems) = preProject
+		Aspire\grafana\config\provisioning\dashboards\default.yaml = Aspire\grafana\config\provisioning\dashboards\default.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "datasources", "datasources", "{E458D9AF-13C8-4FC2-9903-E95A2F577A91}"
+	ProjectSection(SolutionItems) = preProject
+		Aspire\grafana\config\provisioning\datasources\default.yaml = Aspire\grafana\config\provisioning\datasources\default.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "otelcollector", "otelcollector", "{BA7D698F-EA6B-4826-BD03-95853C5F9316}"
+	ProjectSection(SolutionItems) = preProject
+		Aspire\otelcollector\config.yaml = Aspire\otelcollector\config.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD0CDCD0-05F2-44D3-8BFA-D76AE7CBF6C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD0CDCD0-05F2-44D3-8BFA-D76AE7CBF6C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD0CDCD0-05F2-44D3-8BFA-D76AE7CBF6C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD0CDCD0-05F2-44D3-8BFA-D76AE7CBF6C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D76628BC-70EE-40E5-A08F-86693F696C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D76628BC-70EE-40E5-A08F-86693F696C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D76628BC-70EE-40E5-A08F-86693F696C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D76628BC-70EE-40E5-A08F-86693F696C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE286A14-B204-432A-8687-4D3D9AE1CFD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE286A14-B204-432A-8687-4D3D9AE1CFD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE286A14-B204-432A-8687-4D3D9AE1CFD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE286A14-B204-432A-8687-4D3D9AE1CFD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B9B6886-BD16-40B3-AE6B-586AB8C807B4}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D76628BC-70EE-40E5-A08F-86693F696C9E} = {9AA561F8-9B26-4CD9-A346-2A95EF2520DD}
+		{FE286A14-B204-432A-8687-4D3D9AE1CFD6} = {9AA561F8-9B26-4CD9-A346-2A95EF2520DD}
+		{33951FCE-7297-4719-9842-F710C0567BD8} = {9AA561F8-9B26-4CD9-A346-2A95EF2520DD}
+		{42B9ADAC-8822-4C92-8D85-9D9F1C18A729} = {9AA561F8-9B26-4CD9-A346-2A95EF2520DD}
+		{4E1E44BD-D4EC-4A91-B63D-0DFAEB9E356F} = {33951FCE-7297-4719-9842-F710C0567BD8}
+		{75DFB555-58DD-414A-8AE5-66D0D65709FE} = {33951FCE-7297-4719-9842-F710C0567BD8}
+		{0D8447BE-EC88-461E-B0DF-767F53C397EF} = {4E1E44BD-D4EC-4A91-B63D-0DFAEB9E356F}
+		{4E5DEBF7-D17E-43F0-A7F4-C903918A8731} = {0D8447BE-EC88-461E-B0DF-767F53C397EF}
+		{E458D9AF-13C8-4FC2-9903-E95A2F577A91} = {0D8447BE-EC88-461E-B0DF-767F53C397EF}
+		{BA7D698F-EA6B-4826-BD03-95853C5F9316} = {9AA561F8-9B26-4CD9-A346-2A95EF2520DD}
+	EndGlobalSection
+EndGlobal
