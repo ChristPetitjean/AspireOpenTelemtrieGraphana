@@ -1,7 +1,7 @@
 ﻿using JasperFx.Core;
 using Wolverine;
 
-namespace Wolverine_Rabbit;
+namespace Wolverine_Rabbit.HostedServices;
 
 public class PingerService(IServiceProvider serviceProvider) : BackgroundService
 {

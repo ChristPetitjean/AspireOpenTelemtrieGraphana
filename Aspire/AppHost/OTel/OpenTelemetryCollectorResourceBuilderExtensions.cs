@@ -5,11 +5,13 @@ namespace AppHost.OTel;
 
 public static class OpenTelemetryCollectorResourceBuilderExtensions
 {
-    private const string DashboardOtlpUrlVariableName = "ASPIRE_DASHBOARD_OTLP_ENDPOINT_URL";
+    //private const string DashboardOtlpUrlVariableName    = "ASPIRE_DASHBOARD_OTLP_ENDPOINT_URL";
+    //private const string DashboardOtlpUrlVariableName    = "DOTNET_DASHBOARD_OTLP_ENDPOINT_URL";
+    private const string DashboardOtlpUrlVariableName    = "ASPIRE_DASHBOARD_OTLP_HTTP_ENDPOINT_URL";
     private const string DashboardOtlpApiKeyVariableName = "AppHost:OtlpApiKey";
-    private const string DashboardOtlpUrlDefaultValue = "http://localhost:18889";
-    private const string OTelCollectorImageName = "ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib";
-    private const string OTelCollectorImageTag = "0.123.0";
+    private const string DashboardOtlpUrlDefaultValue    = "http://localhost:18889";
+    private const string OTelCollectorImageName          = "ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib";
+    private const string OTelCollectorImageTag           = "0.123.0";
 
     public static IResourceBuilder<OpenTelemetryCollectorResource> AddOpenTelemetryCollector(this IDistributedApplicationBuilder builder, string name, string configFileLocation)
     {
