@@ -76,6 +76,140 @@
         "type": "prometheus",
         "uid": "PBFA97CFB590B2093"
       },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 63,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "",
+      "targets": [
+        {
+          "disableTextWrap": false,
+          "editorMode": "builder",
+          "expr": "messages_sent_count_total",
+          "fullMetaSearch": false,
+          "includeNullMetadata": true,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A",
+          "useBackend": false,
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PBFA97CFB590B2093"
+          }
+        }
+      ],
+      "title": "Message sent to ESB",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PBFA97CFB590B2093"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 62,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "",
+      "targets": [
+        {
+          "disableTextWrap": false,
+          "editorMode": "builder",
+          "expr": "messages_read_count_total",
+          "fullMetaSearch": false,
+          "includeNullMetadata": true,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A",
+          "useBackend": false,
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PBFA97CFB590B2093"
+          }
+        }
+      ],
+      "title": "Messages read from ESB",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PBFA97CFB590B2093"
+      },
       "description": "Just display the home page",
       "fieldConfig": {
         "defaults": {
@@ -102,7 +236,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 0
+        "y": 8
       },
       "id": 61,
       "options": {
@@ -125,6 +259,10 @@
       "pluginVersion": "",
       "targets": [
         {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PBFA97CFB590B2093"
+          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "expr": "greetings_count_total",
@@ -133,11 +271,7 @@
           "legendFormat": "__auto",
           "range": true,
           "refId": "A",
-          "useBackend": false,
-          "datasource": {
-            "type": "prometheus",
-            "uid": "PBFA97CFB590B2093"
-          }
+          "useBackend": false
         }
       ],
       "title": "Number of greetings",
@@ -262,7 +396,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 0
+        "y": 8
       },
       "id": 47,
       "options": {
@@ -422,7 +556,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 8
+        "y": 16
       },
       "id": 40,
       "options": {
@@ -563,7 +697,7 @@
         "h": 4,
         "w": 6,
         "x": 12,
-        "y": 9
+        "y": 17
       },
       "id": 58,
       "options": {
@@ -635,7 +769,7 @@
         "h": 4,
         "w": 6,
         "x": 18,
-        "y": 9
+        "y": 17
       },
       "id": 59,
       "options": {
@@ -707,7 +841,7 @@
         "h": 4,
         "w": 6,
         "x": 12,
-        "y": 13
+        "y": 21
       },
       "id": 60,
       "options": {
@@ -776,7 +910,7 @@
         "h": 4,
         "w": 6,
         "x": 18,
-        "y": 13
+        "y": 21
       },
       "id": 42,
       "options": {
@@ -877,7 +1011,7 @@
         "h": 8,
         "w": 6,
         "x": 0,
-        "y": 17
+        "y": 25
       },
       "id": 49,
       "options": {
@@ -974,7 +1108,7 @@
         "h": 8,
         "w": 6,
         "x": 6,
-        "y": 17
+        "y": 25
       },
       "id": 55,
       "options": {
@@ -1113,7 +1247,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 17
+        "y": 25
       },
       "id": 54,
       "options": {
@@ -1282,10 +1416,10 @@
         ]
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
+        "h": 7,
+        "w": 24,
         "x": 0,
-        "y": 25
+        "y": 33
       },
       "id": 51,
       "options": {
@@ -1424,8 +1558,8 @@
     ]
   },
   "timezone": "",
-  "title": "ASP.NET Core Copy",
-  "uid": "482b9cbc-b905-4147-a9f7-3675c33f5917",
+  "title": "ASP.NET Core Copy Copy",
+  "uid": "4ff1fe23-ec94-43a8-a90e-29c787ce0cd4",
   "version": 1,
   "weekStart": ""
 }

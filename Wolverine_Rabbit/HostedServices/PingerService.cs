@@ -1,5 +1,6 @@
 ﻿using JasperFx.Core;
 using Wolverine;
+using Wolverine_Rabbit.Metrics;
 
 namespace Wolverine_Rabbit.HostedServices;
 
@@ -22,6 +23,7 @@ public class PingerService(IServiceProvider serviceProvider) : BackgroundService
                 };
 
                 await bus.SendAsync(message);
+                MetricsCatalog.CountMessagesSent.Add(1);
                 logger.LogInformation("Sent PingMessage: {PingMessageNumber}", message.Number);
                 await Task.Delay(1.Seconds(), stoppingToken);
             }
